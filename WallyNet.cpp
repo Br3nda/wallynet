@@ -27,7 +27,7 @@ void wallynet_setup(int tx_pin, int led_pin, String station_name) {
     pinMode(led_pin, OUTPUT);    
 }
 
-void wallynet_send_message(String reading_type, String reading_value) { 
+void wallynet_send_beacon(String reading_type, String reading_value) { 
   String message;
 
   int buf_len = message.length() +1;

@@ -6,6 +6,6 @@
 #include <stdlib.h>
 #include <Arduino.h>
 
-void wallynet_send_message(String reading_name, String reading_value);
+void wallynet_send_beacon(String reading_name, String reading_value);
 void wallynet_setup(int tx_pin, int led_pin, String station_name);
 #endif
