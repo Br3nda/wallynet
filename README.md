@@ -17,3 +17,8 @@ e.g.
   wallynet_send_beacon("temp", (String) temp);
   wallynet_send_beacon("humidity", (String) humidity);
 ```
+
+Notes: 
+* Messages are un-encrypted and trivially intercepted or jammed
+* Nothing checks that the message was recieved
+* Your own tranmitter may all transmit over the top of each other, and garble each other.
