@@ -2,11 +2,12 @@
 
 2 methods, for sending beaconed messages over ultra cheap 433MHz transmitters.
 
-wallynet_setup(transmit_pin, led_pin, station_name); //Called in setup();
+`wallynet_setup(transmit_pin, led_pin, station_name); //Called in setup();`
 
+```
 //Called to send a message
 wallynet_send_beacon(String reading_name, String reading_value)
-
+```
 
 e.g.
 ```  
