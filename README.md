@@ -15,7 +15,7 @@ e.g.
   wallynet_send_beacon("humidity", (String) humidity);
 ```
 # Dependencies:
-* (Virtual Wire)[https://www.pjrc.com/teensy/td_libs_VirtualWire.html]
+* [Virtual Wire](https://www.pjrc.com/teensy/td_libs_VirtualWire.html)
 
 # Notes: 
 * Messages are un-encrypted and trivially intercepted or jammed
