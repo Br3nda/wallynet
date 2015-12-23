@@ -2,7 +2,7 @@
 
 2 methods, for sending beaconed messages over ultra cheap 433MHz transmitters.
 
-In the arduino idea, in setup(), tell the library:
+In the arduino ide, in setup(), tell the library:
 
  * which pin the 433MHz transmitter was wired to, 
  * which led to light to indicate transmission (Uno have a handy led on pin 11)
