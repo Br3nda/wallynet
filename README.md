@@ -11,7 +11,7 @@ wallynet_send_beacon(String reading_name, String reading_value)
 
 e.g.
 ```  
-  int humidity = (int) DHT.humidity;  
+  float humidity = DHT.humidity;  
   wallynet_send_beacon("humidity", (String) humidity);
 ```
 # Dependencies:
