@@ -8,7 +8,7 @@ In the arduino ide, in setup(), tell the library:
  * which led to light to indicate transmission (Uno have a handy led on pin 11)
  * what your station is called. 
 
-`wallynet_setup(transmit_pin, led_pin, station_name);`
+`wallynet_setup(int transmit_pin, int led_pin, String station_name);`
 
 Example 
 
