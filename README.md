@@ -2,10 +2,10 @@
 
 #### installation
 
-`
+```
 cd [arduino-instalation]/libraries
 git clone https://github.com/Br3nda/wallynet.git
-`
+```
 
 restart arduino ide
 
@@ -24,25 +24,25 @@ In the arduino ide, in setup(), tell the library:
 
 Example 
 
-`
+```
 wallynet_setup(1, 11, "laundry");
-`
+```
 
 
 Use `wallynet_send_beacon`  to transmit. 
 
-`
+```
 wallynet_send_beacon(String reading_name, String reading_value)
-`
+```
 
 e.g.
 
-`
+```
   float humidity = DHT.humidity;  
   wallynet_send_beacon("humidity", (String) humidity);
-`
+```
 
-`
+```
 #include <WallyNet.h>
 
 const int led_pin = 11;
@@ -57,11 +57,11 @@ void loop() {
   wallynet_send_beacon("temp", (String) sensor_reading);
   delay(63000);
 }
-`
+```
 
 #### Recieving messages
 
-`
+```
 #include <WallyNet.h>
 
 const int led_pin = 13;
@@ -75,7 +75,7 @@ void setup() {
 void loop() {
   wallynet_listen();
 }
-`
+```
 
 
 ### Dependencies:
