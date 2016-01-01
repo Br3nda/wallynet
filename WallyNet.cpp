@@ -11,7 +11,7 @@
 
 const int wallynet_bps = 500;
 int wallynet_tx_pin;
-int wallynet_led_pin;
+int wallynet_tx_led_pin;
 String wallynet_station_name;
 
 void wallynet_setup(int tx_pin, int led_pin, String station_name) {
@@ -35,12 +35,12 @@ void wallynet_send_beacon(String reading_type, String reading_value) {
   char buf[buf_len];
   message.toCharArray(buf, buf_len);
   
-  digitalWrite(wallynet_led_pin, HIGH); // Flash a light to show transmitting
+  digitalWrite(wallynet_tx_led_pin, HIGH); // Flash a light to show transmitting
 
   vw_send((uint8_t *)buf, buf_len);
   vw_wait_tx(); // Wait until the whole message is gone
 
-  digitalWrite(wallynet_led_pin, LOW);
+  digitalWrite(wallynet_tx_led_pin, LOW);
   delay(2000);
 }
 
