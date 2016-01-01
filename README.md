@@ -7,7 +7,13 @@ cd [arduino-instalation]/libraries
 git clone https://github.com/Br3nda/wallynet.git
 ```
 
-restart arduino ide
+Then restart you arduino ide
+
+#### Hardware
+
+* reciever and transmitters are currently USD1.99 for a pair at [dx.com](http://www.dx.com/p/433mhz-rf-transmitter-module-receiver-module-link-kit-for-arduino-arm-mcu-wl-green-220194)
+* transmtters are current USD1.33 at [dx.com](http://www.dx.com/p/433mhz-wireless-transmitter-module-superregeneration-for-arduino-green-149254)
+
 
 
 #### Usage
