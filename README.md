@@ -92,4 +92,4 @@ void loop() {
  
 * Messages are un-encrypted and trivially intercepted or jammed
 * Nothing checks that the message was recieved
-* Your own tranmitter may all transmit over the top of each other, and garble each other.
+* Your own transmitters may all transmit over the top of each other, and garble each other.
