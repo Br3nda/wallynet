@@ -1,4 +1,4 @@
-// VirtualWire.cpp
+// WallyNet.cpp
 //
 // Wrapper for VirtualWire
 //
