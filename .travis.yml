@@ -12,6 +12,7 @@ before_install:
 install:
   - ln -s $PWD /usr/local/share/arduino/libraries/wallynet
   - ln -s $PWD /usr/local/share/arduino/libraries/VirtualWire
+  - find
 script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/reciever/reciever.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/wallynet_beacon/wallynet_beacon.ino
