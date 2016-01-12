@@ -5,10 +5,13 @@ before_install:
   - export DISPLAY=:1.0
   - wget http://downloads.arduino.cc/arduino-1.6.5-linux64.tar.xz
   - tar xf arduino-1.6.5-linux64.tar.xz
+  - wget https://github.com/Br3nda/wallynet/releases/download/wallynet-0.9.1/VirtualWire.zip
+  - unzip VirtualWire.zip
   - sudo mv arduino-1.6.5 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 install:
   - ln -s $PWD /usr/local/share/arduino/libraries/wallynet
+  - ln -s $PWD /usr/local/share/arduino/libraries/VirtualWire
 script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/reciever/reciever.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/wallynet_beacon/wallynet_beacon.ino
