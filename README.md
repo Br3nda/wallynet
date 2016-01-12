@@ -1,20 +1,6 @@
 # wallynet
 
-#### installation
-
-```
-  cd [arduino-instalation]/libraries
-  git clone https://github.com/Br3nda/wallynet.git
-```
-
-Then restart you arduino ide
-
-#### Hardware
-
-* reciever and transmitters are currently USD1.99 for a pair at [dx.com](http://www.dx.com/p/433mhz-rf-transmitter-module-receiver-module-link-kit-for-arduino-arm-mcu-wl-green-220194)
-* transmtters are current USD1.33 at [dx.com](http://www.dx.com/p/433mhz-wireless-transmitter-module-superregeneration-for-arduino-green-149254)
-
-
+![build status](https://travis-ci.org/Br3nda/wallynet.svg)
 
 #### Usage
 
@@ -83,10 +69,25 @@ void loop() {
 }
 ```
 
+#### installation
+
+```
+  cd [arduino-instalation]/libraries
+  git clone https://github.com/Br3nda/wallynet.git
+```
+
+Then restart you arduino ide
+
+#### Hardware
+
+* reciever and transmitters are currently USD1.99 for a pair at [dx.com](http://www.dx.com/p/433mhz-rf-transmitter-module-receiver-module-link-kit-for-arduino-arm-mcu-wl-green-220194)
+* transmtters are current USD1.33 at [dx.com](http://www.dx.com/p/433mhz-wireless-transmitter-module-superregeneration-for-arduino-green-149254)
+
+
 
 ### Dependencies:
 
-* [Virtual Wire](https://www.pjrc.com/teensy/td_libs_VirtualWire.html)
+* [Virtual Wire](https://www.pjrc.com/teensy/td_libs_VirtualWire.html). Also available from [wallynet on github](https://github.com/Br3nda/wallynet/releases/download/wallynet-0.9.1/VirtualWire.zip)
 
 ### Notes:
  
